@@ -1,0 +1,503 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding:0;
+}
+
+h1{
+    display: inline;
+    font-family: "Joti One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    padding-right: 5%;
+    background-color: #bc6c256e;
+}
+
+h2{
+    color: black;
+    font-family: "McLaren", serif;
+    font-weight: 350;
+    font-style: normal;
+}
+p{
+    color: black;
+    font-family: "McLaren", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1573519716358-1cdc98533bfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    position: relative;
+    height: 94vh;
+    overflow: hidden;
+    
+}
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-bottom: 5px solid #BC6C25;
+}
+.headerText {
+    position: relative;
+    text-align: right;
+    padding-top: 15%;
+    color: black;
+    z-index: -1;
+}
+
+nav{
+    background-color: #BC6C25;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    z-index: 1;
+}
+
+.brand{
+    font-family: "Joti One", serif;
+    font-size: medium;
+}
+
+footer{
+    background-color: #BC6C25;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer i{
+    font-size: small;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    height: 100%;
+
+}
+
+li{
+    display: inline;
+}
+
+
+.openingTimes{
+    display: grid;
+    background-color: #FEFAE0;
+    min-height: 30vh;
+    min-width: 50%;
+    justify-self: center;
+}
+
+.toDo{
+    background-color: rgb(255, 174, 108);
+    padding: 200px;
+
+}
+
+.toDoItem{
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(105,119,71);
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 15px;
+}
+
+.ourAnimals{
+    background-color: #FEFAE0;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    border: 5px solid #BC6C25;
+}
+
+.animal{
+    background-color: #FEFAE0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    justify-content: center;
+    border-bottom: 5px solid #BC6C25;
+    border-right: 5px solid #BC6C25;
+    border-left: 5px solid #BC6C25;
+}
+.animal div{
+    background-color: rgba(91, 108, 64, 0.678);
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.animal-h2{
+    background-color: #FEFAE0;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-top: 5px solid #BC6C25;
+    border-right: 5px solid #BC6C25;
+    border-left: 5px solid #BC6C25;
+    height: 10vh;
+}
+
+.animal div p{
+    margin: 1rem 0;
+    padding: 0 0.2rem;
+}
+
+.animal .button{
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    color: black;
+    font-family: "McLaren", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(63, 107, 54, 0.733);
+}
+
+.animal .button:hover{
+    background-color: rgb(88, 151, 74);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(243, 160, 66);
+}
+
+nav li a{
+
+    font-family: "McLaren", serif;
+    padding: 1rem;
+}
+
+nav li a:hover{
+    background-color: rgb(243, 160, 66);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.openingTimes{
+    border: 5px solid #BC6C25;
+    padding: 25px;
+    border-radius: 25px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.wrapper{
+margin: 0 10%;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    background-color: #DDA15E;
+    border-left: 5px solid #BC6C25;
+    border-right: 5px solid #BC6C25;
+    border-top: 5px solid #BC6C25;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.content p{
+    
+    padding: 5%;
+}
+
+.content h2{
+    color: black;
+}
+
+.text-content{
+    background-color: #DDA15E;
+}
+
+i{
+    font-size: x-large;
+}
+
+.content i{
+    margin-top: 2%;
+    font-size: x-large;
+}
+
+.content-animals{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #DDA15E;
+    border: 5px solid #BC6C25;
+    border-radius: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    gap: 0.5rem;
+}
+
+.content-animals img {
+    width: 100%;
+    align-self: center;
+}
+
+.content-animals p{
+   margin-top: 3%;
+    padding: 5%;
+}
+
+.animal-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    border-bottom: 5px solid #BC6C25;
+}
+
+.animal-box:last-child{
+    border-bottom: none;
+}
+
+
+.newsletter{
+    background-color: #DDA15E;
+    padding: 3%;
+    border-left: 5px solid #BC6C25;
+    border-right: 5px solid #BC6C25;
+}
+
+.newsletter h2{
+    padding-bottom: 1%;
+}
+
+input[type=submit]{
+    background-color: #BC6C25;
+    border: none;
+    border-radius: 10%;
+    padding: 15px 30px;
+    font-family: "McLaren", serif;
+    margin-top: 1%;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover{
+    cursor: pointer;
+    background-color: rgb(197, 131, 56);
+  }
+
+  input[type=text]{
+    padding: 5px;
+    border: 2px solid#BC6C25;
+  }
+  label{
+    font-family: "McLaren", serif;
+  }
+
+.findUs{
+    background-color: #FEFAE0;
+    padding: 3%;
+    margin-bottom: 2%;
+    border: 5px solid #BC6C25;
+    height: 70vh;
+}
+
+.findUs .content-find{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1%;
+}
+
+.findUs .contactInfo{
+    margin-top: 10%;
+    font-size: larger;
+    line-height: 1.9;
+}
+
+.findUs iframe{
+    height: 50vh;
+    width: 100%;
+}
+
+.table{
+    align-self: center;
+    justify-self: center;
+    font-family: "McLaren", serif;
+}
+
+.table caption{
+    font-family: "McLaren", serif;
+}
+
+table, th, td {
+    border: 1px solid #FEFAE0;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: rgba(91, 108, 64, 0.678);
+    padding: 10px;
+  }
+
+#nav-toggle {
+    display: none;
+}
+
+.toggle-input {
+    display: none;
+    z-index: 1;
+}
+
+/* Mobile */
+@media (max-width: 850px) {
+
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .toggle-input{
+        display: block;
+        grid-row: 1/2;
+    }
+
+    ul{
+        display: none;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        top: 56px;
+    }
+
+    ul li{
+        height: 200%;
+    }
+    #nav-toggle:checked~ul{
+        display: grid;
+        position:fixed;
+        grid-template-columns: 1fr;
+        padding: 0;
+        background-color: #BC6C25;
+    }
+
+
+    .animal{
+        grid-template-columns: 1fr;
+    }
+
+    .animal div{
+        margin-bottom: 1rem;
+    }
+
+    .findUs .content-find{
+        grid-template-columns: 1fr;
+    }
+    .findUs .content-find iframe{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .findUs{
+        height: auto;
+    }
+
+    .content-animals{
+        gap: 0;
+    }
+    .animal-box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+
+    .animal-box img{
+        grid-column: 1/ 3;
+    }
+
+    .animal-box .text-content{
+        grid-row: 2/3;
+        height: auto;
+    }
+
+    .animal-box .table{
+        grid-row: 3/4;
+        margin-bottom: 1rem;
+        align-self: start;
+    }
+
+    .content{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .content img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .findUs .contactInfo{
+        font-size: 100%;
+    }
+}
+
+@media(max-width:670px){
+    h1{
+        font-size: 60px;
+    }
+}
+
+@media(max-width:400px){
+    h1{
+        font-size: 50px;
+    }
+}
